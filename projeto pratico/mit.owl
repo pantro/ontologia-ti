@@ -1,0 +1,309 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/pantro/ontologies/2022/8/match#"
+     xml:base="http://www.semanticweb.org/pantro/ontologies/2022/8/match"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#pertence_comprador_ti -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#pertence_comprador_ti">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_palavra_chave"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Palavra_Chave"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Comprador_TI"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#pertence_perfil_ti -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#pertence_perfil_ti">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_tecnologia"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Tecnologia"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Perfil_TI"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_palavra_chave -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_palavra_chave">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Comprador_TI"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Palavra_Chave"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_perfil_ti -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_perfil_ti">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Palavra_Chave"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Projeto"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Vendedor_TI"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Perfil_TI"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_projeto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_projeto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Comprador_TI"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Projeto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_tecnologia -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_tecnologia">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Perfil_TI"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Tecnologia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_id_empresa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_id_empresa">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Empresa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_id_palavra_chave -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_id_palavra_chave">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Palavra_Chave"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_id_perfil_ti -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_id_perfil_ti">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Perfil_TI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_id_projeto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_id_projeto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Projeto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_id_tecnologia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_id_tecnologia">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Tecnologia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_localizacao_empresa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_localizacao_empresa">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Empresa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_nome_empresa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_nome_empresa">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Empresa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_nome_palavra_chave -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_nome_palavra_chave">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Palavra_Chave"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_nome_perfil_ti -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_nome_perfil_ti">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Perfil_TI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_nome_projeto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_nome_projeto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Projeto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_nome_tecnologia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_nome_tecnologia">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Tecnologia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_resumo_projeto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#tem_resumo_projeto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Projeto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#Backend -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Backend">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Tecnologia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#Banco_Dados -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Banco_Dados">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Tecnologia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#Comprador_TI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Comprador_TI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Empresa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Vendedor_TI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#Empresa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Empresa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#Frontend -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Frontend">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Tecnologia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#Nao_Relacional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Nao_Relacional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Banco_Dados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#Outras -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Outras">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Tecnologia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#Palavra_Chave -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Palavra_Chave"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#Perfil_TI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Perfil_TI"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#Projeto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Projeto"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#Relacional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Relacional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Banco_Dados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#Tecnologia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Tecnologia"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pantro/ontologies/2022/8/match#Vendedor_TI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Vendedor_TI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pantro/ontologies/2022/8/match#Empresa"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
